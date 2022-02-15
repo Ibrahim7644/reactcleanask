@@ -1,0 +1,14 @@
+.card{
+    width: auto;
+    margin-top: 3px;
+    margin-bottom : 3px;
+
+}
+.container{
+    margin-top: 10px;
+    background-color: lightgray;
+}
+.row{
+    display: flex;
+    justify-content : center;
+}
