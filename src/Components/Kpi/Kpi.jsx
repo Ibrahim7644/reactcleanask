@@ -8,17 +8,16 @@ export default function Kpi() {
       <div class="container">
         <div className="container-fluid">
           <div class="row">
-
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+            <div className="col-lg-2 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
               <div class="card">
                 <div class="card-body">
                   <MdAccountCircle size={25} className="vendorIcon" />
-                  <h5 class="card-text text-center">Search Vendors1</h5>
+                  <h5 class="card-text text-center">Search Vendors</h5>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+            <div className="col-lg-2 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
               <div class="card">
                 <div class="card-body">
                   <MdAccountCircle size={25} className="vendorIcon" />
@@ -27,7 +26,7 @@ export default function Kpi() {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+            <div className="col-lg-2 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
               <div class="card">
                 <div class="card-body">
                   <MdAccountCircle size={25} className="vendorIcon" />
@@ -36,7 +35,7 @@ export default function Kpi() {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+            <div className="col-lg-2 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
               <div class="card">
                 <div class="card-body">
                   <MdAccountCircle size={25} className="vendorIcon" />
@@ -45,7 +44,7 @@ export default function Kpi() {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+            <div className="col-lg-2 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
               <div class="card">
                 <div class="card-body">
                   <MdAccountCircle size={25} className="vendorIcon" />
@@ -53,7 +52,6 @@ export default function Kpi() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
