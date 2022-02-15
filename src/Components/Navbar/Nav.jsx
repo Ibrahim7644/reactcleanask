@@ -1,7 +1,7 @@
 import React from 'react'
 import './Nav.css';
-import { GiLoveInjection  } from "react-icons/gi";
-import { AiFillDollarCircle  } from "react-icons/ai";
+import { GiLoveInjection } from "react-icons/gi";
+import { AiFillDollarCircle } from "react-icons/ai";
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { Button } from 'bootstrap';
 
@@ -22,37 +22,40 @@ function Nav(props) {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    &emsp;
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">History</a>
+
+                                <a class="nav-link active" aria-current="page" href="#">  &emsp; History  &emsp;</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                                <a class="nav-link active" aria-current="page" href="#"> &emsp; Profile  &emsp;</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Support</a>
+                                <a class="nav-link active" aria-current="page" href="#"> &emsp; Support  &emsp;</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                                <a class="nav-link active" aria-current="page" href="#"> &emsp; FAQ  &emsp;</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        &nbsp;
-                            <li class="nav-item">
-                                <button type="button" class="btn btn-secondary btn-lg">Book Now</button>
-                            </li>
-                            &nbsp;
-                            <li class="nav-item">
-                                <button type="button" class="btn btn-secondary  btn-lg">Log Out</button>
-                            </li>
-                            &nbsp;
-                            <li class="nav-item">
-                            <button type="button" class="btn btn-secondary  btn-md"><AiFillDollarCircle size={34} className='icondollar' /><BiDotsVerticalRounded size={30}/></button>
-                            </li>
-                        </ul>
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                &nbsp;&nbsp;
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-secondary btn-lg">Book Now</button>
+                                </li>
+                                &nbsp;&nbsp;
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-secondary  btn-lg">Log Out</button>
+                                </li>
+                                &nbsp;&nbsp;
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-secondary  btn-md"><AiFillDollarCircle size={34} className='icondollar' /><BiDotsVerticalRounded size={30} /></button>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
-
-
                 </div>
             </nav>
         </div>
