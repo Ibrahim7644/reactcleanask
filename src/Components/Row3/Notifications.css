@@ -6,7 +6,7 @@
 }
 .container{
     margin-top: 10px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 .row{
     display: flex;

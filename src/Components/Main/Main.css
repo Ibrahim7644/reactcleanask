@@ -1,0 +1,11 @@
+.main_menu
+{
+    /* background-color: rgb(136, 155, 156); */
+    background-color: lightgray;
+    height: 100%;
+}
+
+.inner
+{
+    overflow-y: scroll;
+}

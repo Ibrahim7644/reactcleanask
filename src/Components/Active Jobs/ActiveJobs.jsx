@@ -4,7 +4,7 @@ import './ActiveJobs.css'
 export default function ActiveJobs() {
   return (
     <>
-        <div className="container">
+        {/* <div className="container"> */}
               <div className="col-lg-12 col-md-12 d-flex align-items-stretch col-sm-12 col-xs-12">
                 {/* Card 1 Start */}
                 <div class="card">
@@ -22,7 +22,7 @@ export default function ActiveJobs() {
                 </div>
                 {/* Card End */}
               </div>
-            </div>    
+            {/* </div>     */}
     </>
   )
 }

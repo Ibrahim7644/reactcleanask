@@ -4,10 +4,10 @@ import './IncomingInquiries.css'
 export default function IncomingInquiries() {
   return (
     <>
-      <div className="container">
-        <div className="col-lg-12 col-md-12 d-flex align-items-stretch col-sm-12 col-xs-12">
+      <div >
+        <div className="col-8 col-md-12 d-flex align-items-stretch col-sm-12 col-xs-12">
           {/* Card 1 Start */}
-          <div class="card">
+          <div class="card mt-3">
             <div>
               <h6 class="card-title row3BgColor">Incoming Inquiries</h6>
             </div>
