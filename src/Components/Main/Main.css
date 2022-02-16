@@ -5,12 +5,11 @@
 
 }
 
-.inner
-{
-    /* overflow-y: scroll; */
-}
-
 .sidebar
 {
-    height: 200vh;
+    height: auto;
+
+    /* height: 200vh; */
 }
+
+

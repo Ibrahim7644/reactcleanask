@@ -1,22 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Nav from "../Navbar/Nav";
 import Sidebar from "../Sidebar/Sidebar";
 import Footer from "../Footer/Footer";
 import Kpi from "../Kpi/Kpi";
-import Charts from "../Row2/Charts";
 
-import './Main.css';
+import "./Main.css";
 import PastWeekInquiries from "../Past week inquiries/PastWeekInquiries";
 import RecentJobs from "../Recent Jobs/RecentJobs";
 import Progress from "../Progress/Progress";
 import Notifications from "../Notifications/Notifications";
-import IncomingInquiries from '../Incoming Inquiries/IncomingInquiries';
+import IncomingInquiries from "../Incoming Inquiries/IncomingInquiries";
 import ActiveJobs from "../Active Jobs/ActiveJobs";
+import Map from "../Map/Map";
+import ScheduledJobs from "../Scheduled Jobs/ScheduledJobs";
 
 function Main(props) {
   return (
-    <div >
+    <div>
       <div className="main_menu">
         <div className="row">
           <div className="col-12">
@@ -25,11 +25,13 @@ function Main(props) {
         </div>
         <div className="row">
           <div className="sidebar col-1">
-
             <div class=" row">
-              <div class="col-12 d-inline-flex"><Sidebar /></div>
+              <div class="col-12 d-inline-flex">
+                <Sidebar />
+              </div>
             </div>
           </div>
+          {/* ROW 1 */}
           <div className="inner col-11">
             <div class="row w-70 mt-4">
               <Kpi title="Search Venders" />
@@ -38,34 +40,32 @@ function Main(props) {
               <Kpi title="Manage Finances" />
               <Kpi title="Manage Clients" />
             </div>
-            <div class="row w-100 h-25 mt-4">
+            {/* ROW 2 */}
+            <div class="row mt-4">
               <PastWeekInquiries />
               <RecentJobs />
               <Progress />
-
             </div>
+            {/* ROW 3 */}
             <div className="container">
               <div className="row">
-
                 <Notifications />
-
-                <div className="col-8">
-
+                <div className="row col-8">
                   <IncomingInquiries />
-
                   <ActiveJobs />
-
                 </div>
-
               </div>
             </div>
-
+            {/* ROW 4 */}
+            <div class="row mt-4">
+              <Map/>
+              <ScheduledJobs/>
+            </div>
           </div>
-          <br /><br /><br /><br />
-
         </div>
+
         <div className="row">
-          <div className="col-12 mt-100">
+          <div className="col-12">
             <Footer />
           </div>
         </div>
