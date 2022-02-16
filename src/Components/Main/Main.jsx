@@ -24,9 +24,9 @@ function Main(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-1">
+          <div className="sidebar col-1">
 
-            <div class="row">
+            <div class=" row">
               <div class="col-12 d-inline-flex"><Sidebar /></div>
             </div>
           </div>
@@ -38,7 +38,7 @@ function Main(props) {
               <Kpi title="Manage Finances" />
               <Kpi title="Manage Clients" />
             </div>
-            <div class="row w-100 h-50 mt-4">
+            <div class="row w-100 h-25 mt-4">
               <PastWeekInquiries />
               <RecentJobs />
               <Progress />

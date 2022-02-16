@@ -2,10 +2,15 @@
 {
     /* background-color: rgb(136, 155, 156); */
     background-color: lightgray;
-    height: 100%;
+
 }
 
 .inner
 {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+}
+
+.sidebar
+{
+    height: 200vh;
 }
