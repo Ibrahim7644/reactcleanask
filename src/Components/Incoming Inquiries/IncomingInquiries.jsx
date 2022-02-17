@@ -1,28 +1,17 @@
 import React from "react";
-import './IncomingInquiries.css'
+import "./IncomingInquiries.css";
 
 export default function IncomingInquiries() {
   return (
     <>
-      <div >
-        <div className="col-8 col-md-12 d-flex align-items-stretch col-sm-12 col-xs-12">
-          {/* Card 1 Start */}
-          <div class="card mt-3">
-            <div>
-              <h6 class="card-title row3BgColor">Incoming Inquiries</h6>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente unde eaque sit iste maxime deleniti Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Unde deleniti blanditiis
-                quaerat possimus voluptates nihil ipsa eos, perferendis pariatur
-                itaque nesciunt sit ducimus incidunt ut asperiores architecto
-                eum aut minima!
-              </p>
-            </div>
-          </div>
-          {/* Card End */}
+      <div className="card "style={{height: "250px" , borderRadius: "5" }}>
+        <div>
+          <h6 class="card-title row3BgColor">Incoming Inquiries</h6>
+        </div>
+        <div class="card-body text-center">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint dolores deleniti qui est fuga aliquam obcaecati temporibus laborum sunt saepe recusandae a, asperiores incidunt molestiae exercitationem ipsa doloribus!
+          </p>
         </div>
       </div>
     </>

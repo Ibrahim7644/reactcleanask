@@ -4,8 +4,8 @@ import './RecentJobs.css'
 export default function RecentJobs() {
   return (
     <>
-      <div className="col-lg-6 col-md-4 d-flex align-items-stretch col-sm-4 col-xs-6">
-        <div class="card">
+      <div className="col-lg-6 col-md-6 d-flex align-items-stretch col-sm-12 col-xs-12">
+        <div class="card recentJobsCard" style={{ borderRadius: "2%" }}>
           <div class="card-body">
             <h6 class="card-title"> Recent Jobs </h6>
             <p class="card-text">Chart2 here</p>

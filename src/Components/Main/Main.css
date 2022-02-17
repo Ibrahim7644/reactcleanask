@@ -2,14 +2,17 @@
 {
     /* background-color: rgb(136, 155, 156); */
     background-color: lightgray;
-
+    /* border: 2px solid red; */
 }
 
 .sidebar
 {
     height: auto;
-
     /* height: 200vh; */
 }
 
-
+/* Main Body is use to contol div of main body  */
+/* .mainBody{
+    border: 2px solid red;
+    margin-left: -25px;
+} */

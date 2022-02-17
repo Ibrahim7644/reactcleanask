@@ -14,9 +14,16 @@ import ActiveJobs from "../Active Jobs/ActiveJobs";
 import Map from "../Map/Map";
 import ScheduledJobs from "../Scheduled Jobs/ScheduledJobs";
 
+import { MdPersonSearch } from "react-icons/md";
+import { FiTruck } from "react-icons/fi"
+import { GiNewspaper } from "react-icons/gi"
+import { GiTakeMyMoney } from "react-icons/gi"
+import { BsFillPersonBadgeFill } from "react-icons/bs"
+
+
 function Main(props) {
   return (
-    <div>
+    <>
       <div className="main_menu">
         <div className="row">
           <div className="col-12">
@@ -25,41 +32,48 @@ function Main(props) {
         </div>
         <div className="row">
           <div className="sidebar col-1">
-            <div class=" row">
-              <div class="col-12 d-inline-flex">
+            <div class="row" >
+              <div class="col-12 d-inline-flex" >
                 <Sidebar />
               </div>
             </div>
           </div>
           {/* ROW 1 */}
-          <div className="inner col-11">
-            <div class="row w-70 mt-4">
-              <Kpi title="Search Venders" />
-              <Kpi title="Manage Contracts" />
-              <Kpi title="Order Supplies" />
-              <Kpi title="Manage Finances" />
-              <Kpi title="Manage Clients" />
-            </div>
+          <div className="col-11 mainBody ">
+            <div class="row mt-2" style={{ justifyContent : "start" }}>
+              <Kpi title="Search Vendors" icon={<MdPersonSearch size={'40'} color={'orange'} />} />
+              <Kpi title="Manage Contracts" icon={<GiNewspaper size={'40'} color={'orange'} />} />
+              <Kpi title="Order Supplies"  icon={<FiTruck size={'40'} color={'orange'} />} />
+              <Kpi title="Manage Finances" icon={<GiTakeMyMoney size={'40'} color={'orange'} />} />
+              <Kpi title="Manage Clients" icon={<BsFillPersonBadgeFill size={'40'} color={'orange'} />} />
+            </div><hr />
             {/* ROW 2 */}
-            <div class="row mt-4">
+            <div class="row mt-2">
               <PastWeekInquiries />
               <RecentJobs />
               <Progress />
-            </div>
+            </div><hr />
             {/* ROW 3 */}
-            <div className="container">
-              <div className="row">
-                <Notifications />
-                <div className="row col-8">
+            <div class="row mt-2">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+                <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 min-vh-50">
+                  <Notifications />
+                </div>
+              </div>
+              <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 ">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <IncomingInquiries />
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                   <ActiveJobs />
                 </div>
               </div>
             </div>
+
             {/* ROW 4 */}
-            <div class="row mt-4">
-              <Map/>
-              <ScheduledJobs/>
+            <div class="row mt-2">
+              <Map />
+              <ScheduledJobs />
             </div>
           </div>
         </div>
@@ -70,7 +84,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
