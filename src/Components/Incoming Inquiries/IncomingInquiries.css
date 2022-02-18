@@ -1,16 +1,15 @@
-/* .card{
-    width: 100%;
-    height: 100%;
-    margin-top: 3px;
-    margin-bottom : 3px;
-
-} */
-/* .container{
-    margin-top: 10px;
-} */
-
-
-/* .notification{
-    display: block;
-    margin-top: 16px;
-} */
+.incomingBar {
+    margin-top: 0;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .incomingInquiriesCard{
+    height: auto;
+    border-radius: 5;
+  }
+  .Action{
+    color: skyblue ;
+  }

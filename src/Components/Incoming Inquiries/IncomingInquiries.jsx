@@ -1,17 +1,61 @@
 import React from "react";
 import "./IncomingInquiries.css";
+import Table from "react-bootstrap/Table";
 
 export default function IncomingInquiries() {
   return (
     <>
-      <div className="card "style={{height: "250px" , borderRadius: "5" }}>
+      <div className="card incomingInquiriesCard">
         <div>
-          <h6 class="card-title row3BgColor">Incoming Inquiries</h6>
+          <h6 class="card-title incomingBar">Incoming Inquiries</h6>
         </div>
         <div class="card-body text-center">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis enim sint dolores deleniti qui est fuga aliquam obcaecati temporibus laborum sunt saepe recusandae a, asperiores incidunt molestiae exercitationem ipsa doloribus!
-          </p>
+          {/* Table start */}
+
+          <Table  hover>
+            <thead>
+              <tr>
+                <th>Job Title</th>
+                <th>Estimator Name</th>
+                <th>Address</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Job Title one</td>
+                <td>Kashif</td>
+                <td>Testing address somewhere at rwp</td>
+                <td className="Action" >Quote</td>
+              </tr>
+              <tr>
+                <td>Job Title one</td>
+                <td>Kashif</td>
+                <td>Testing address somewhere at rwp</td>
+                <td className="Action" >Quote</td>
+              </tr>
+              <tr>
+                <td>Job Title one</td>
+                <td>Kashif</td>
+                <td>Testing address somewhere at rwp</td>
+                <td className="Action" >Quote</td>
+              </tr>
+              <tr>
+                <td>Job Title one</td>
+                <td>Kashif</td>
+                <td>Testing address somewhere at rwp</td>
+               <td className="Action" >Quote</td>
+              </tr>
+              <tr>
+                <td>Job Title one</td>
+                <td>Kashif</td>
+                <td>Testing address somewhere at rwp</td>
+               <td className="Action" >Quote</td>
+              </tr>
+            </tbody>
+          </Table>
+
+          {/* Table end */}
         </div>
       </div>
     </>

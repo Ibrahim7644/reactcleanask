@@ -4,9 +4,9 @@ export default function ScheduledJobs() {
   return (
     <>
     <div className="col-lg-8 col-md-8 d-flex align-items-stretch col-sm-12 col-xs-12">
-                <div class="card" style={{ borderRadius: "10%" }}>
+                <div class="card" style={{ borderRadius: "0.25rem" }}>
                   <div>
-                    <h6 class="card-title row3BgColor">Scheduled Jobs</h6>
+                    <h6 class="card-title notificationBar">Scheduled Jobs</h6>
                   </div>
                   <div class="card-body">
                     <p>
