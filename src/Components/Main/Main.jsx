@@ -30,13 +30,13 @@ function Main(props) {
           </div>
         </div>
         <div className="row">
-          <div className="sidebar col-1">
+          {/* <div className="sidebar col-1">
             <div class="row">
               <div class="col-12 d-inline-flex">
                 <Sidebar />
               </div>
             </div>
-          </div>
+          </div> */}
           {/* ROW 1 */}
           <div className="col-11 mainBody ">
             <div class="row mt-2" style={{ justifyContent: "start" }}>
@@ -88,13 +88,17 @@ function Main(props) {
 
             {/* ROW 4 */}
             <div class="row mt-2">
-              <Map />
-              <ScheduledJobs />
+              <div className="col-lg-4 col-md-4 d-flex align-items-stretch col-sm-12 col-xs-12">
+                <Map />
+              </div>
+              <div className="col-lg-8 col-md-8  align-items-stretch col-sm-12 col-xs-12">
+                <ScheduledJobs />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-12">
             <Footer />
           </div>

@@ -8,8 +8,9 @@ function Sidebar(props) {
   return (
     <>
       <div class="row">
-        <div class="color_dark bg-dark">
-          <div class="col-12 pl-3 align-items-stretch d-flex flex-column align-items-center align-items-sm-start text-white min-vh-100">
+        
+          <div class="col-1 pl-3 align-items-stretch d-flex  align-items-center align-items-sm-start text-white bg-primary">
+          <div class="color_dark bg-dark">
             <ul
               class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
               id="menu"
