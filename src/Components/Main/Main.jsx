@@ -40,7 +40,7 @@ function Main(props) {
           {/* ROW 1 */}
           <div className="col-11 mainBody ">
             <div className="row">
-              <div class="row mt-2" style={{ justifyContent: "start" }}>
+              <div class="row mt-2 cardsCenter">
                 <Kpi
                   title="Search Vendors"
                   icon={<MdPersonSearch size={"40"} color={"orange"} />}
@@ -96,13 +96,13 @@ function Main(props) {
                   <ScheduledJobs />
                 </div>
               </div>
+              <div className="row mb-2"></div>
             </div>
           </div>
-
-          <div className="row">
-            <div className="col-12">
-              <Footer />
-            </div>
+        </div>
+        <div className="row ">
+          <div className="col-12">
+            <Footer />
           </div>
         </div>
       </div>

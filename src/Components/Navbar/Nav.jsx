@@ -14,7 +14,7 @@ import { Button } from 'bootstrap';
 
 function Nav(props) {
     return (
-        <div class='row justify-content-around' style={{ marginRight:"0px" , marginLeft : "0px" }}>
+        <div class='row justify-content-around'>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand"><GiLoveInjection size={30} className="injectionIcon" /><h1 className='clean'> CLEAN</h1><h1 className='ask'> ASK</h1></a>
