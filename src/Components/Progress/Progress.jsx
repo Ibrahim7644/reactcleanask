@@ -17,7 +17,7 @@ export default function Progress() {
                 selectedOffset={0}
                 outerRadius={0.9}
                 legend={false}
-                colors={["blue"]}
+                colors={["skyblue"]}
                 emptyColor={["whitesmoke"]}
                 clickToggle={[false]}
                 onMouseEnter={[false]}
@@ -43,7 +43,7 @@ export default function Progress() {
                 selectedOffset={0}
                 outerRadius={0.9}
                 legend={false}
-                colors={["blue"]}
+                colors={["skyblue"]}
                 emptyColor={["whitesmoke"]}
                 clickToggle={[false]}
                 onMouseEnter={[false]}
