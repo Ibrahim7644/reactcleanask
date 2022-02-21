@@ -1,6 +1,9 @@
 import React from "react";
 import './RecentJobs.css'
 
+import { BsChevronDoubleDown } from "react-icons/bs";
+
+
 export default function RecentJobs() {
   return (
     <>
@@ -8,6 +11,7 @@ export default function RecentJobs() {
         <div class="card recentJobsCard">
           <div class="card-body">
             <h6 class="card-title"> Recent Jobs </h6>
+            <button className="btn btn-sm btn-primary moreInfoBtn">More info &nbsp;&nbsp; <BsChevronDoubleDown/> </button>
             <p class="card-text">Chart2 here</p>
           </div>
         </div>

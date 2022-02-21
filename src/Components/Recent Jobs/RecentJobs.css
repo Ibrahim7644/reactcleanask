@@ -14,3 +14,10 @@
     margin-bottom : 3px;
     border-radius: 2%;
 }
+.moreInfoBtn{
+    margin-top: 10px;
+    margin-right: 5px;
+    position:absolute;
+    top:0;
+    right:0;
+}
