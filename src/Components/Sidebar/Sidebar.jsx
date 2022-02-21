@@ -9,10 +9,10 @@ function Sidebar(props) {
     <>
       <div class="row">
         
-          <div class="col-1 pl-3 align-items-stretch d-flex  align-items-center align-items-sm-start text-white bg-primary">
+          <div class="col-1 pl-3 align-items-stretch d-flex  align-items-center align-items-sm text-white">
           <div class="color_dark bg-dark">
             <ul
-              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm"
               id="menu"
             >
               <br></br>

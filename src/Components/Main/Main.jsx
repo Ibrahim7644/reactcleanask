@@ -32,13 +32,13 @@ function Main(props) {
         <div className="row">
           <div className="sidebar col-1 bg-dark">
             <div class="row">
-              <div class="col-12 d-inline-flex">
+              <div class="col-12 d-inline-flex sideBarElement">
                 <Sidebar />
               </div>
             </div>
           </div>
           {/* ROW 1 */}
-          <div className="col-11 mainBody ">
+          <div className="col-11 ">
             <div className="row">
               <div class="row mt-2 cardsCenter">
                 <Kpi
@@ -62,14 +62,14 @@ function Main(props) {
                   icon={<BsFillPersonBadgeFill size={"40"} color={"orange"} />}
                 />
               </div>
-              <hr />
+
               {/* ROW 2 */}
               <div class="row mt-2">
                 <PastWeekInquiries />
                 <RecentJobs />
                 <Progress />
               </div>
-              <hr />
+
               {/* ROW 3 */}
               <div class="row mt-2">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
@@ -96,7 +96,9 @@ function Main(props) {
                   <ScheduledJobs />
                 </div>
               </div>
-              <div className="row mb-2"></div>
+              <div>
+                <br />
+              </div>
             </div>
           </div>
         </div>

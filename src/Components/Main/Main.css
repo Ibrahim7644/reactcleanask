@@ -13,11 +13,11 @@
 }
 
 /* Main Body is use to contol div of main body  */
-/* .mainBody{
-    border: 2px solid red;
-    margin-left: -25px;
-} */
+
 
 .cardsCenter{
     justify-content: center;
+}
+.sideBarElement{
+    justify-content:end;
 }
