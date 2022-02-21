@@ -36,7 +36,7 @@ export default function Notifications() {
         <hr />
       </div>
       </div>
-      <button type="button" class="btn btn-primary">
+      <button type="button" class="btn btn-primary seeAllBtn">
             See All
           </button>
     </div>

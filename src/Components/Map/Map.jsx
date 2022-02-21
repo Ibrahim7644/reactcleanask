@@ -4,14 +4,11 @@ import "./Map.css";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "300px",
-  height: "300px",
+  width: "100%",
+  height: "20rem",
 };
 
-const center = {
-  lat: 27.2046,
-  lng: 77.4977,
-};
+
 
 function Map() {
   const { isLoaded } = useJsApiLoader({
@@ -31,14 +28,14 @@ function Map() {
   }, []);
 
   return isLoaded ? (
-    <>
+   
       <div class="card mapCard">
-        <div class="card-body text-center">
+        
           {/* Map start */}
 
           <GoogleMap
             mapContainerStyle={containerStyle}
-            center={center}
+            center={{ lat: 27.2046, lng: 77.4977 }}
             zoom={10}
             onLoad={onLoad}
             onUnmount={onUnmount}
@@ -46,8 +43,8 @@ function Map() {
 
           {/* Map end  */}
         </div>
-      </div>
-    </>
+    
+  
   ) : (
     <></>
   );

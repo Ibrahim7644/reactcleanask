@@ -63,7 +63,7 @@ export default function PastWeekInquiries() {
   // chart end
 
   return (
-    <>
+ 
       <div className="col-lg-3 col-md-3 d-flex align-items-stretch col-sm-12 col-xs-12">
         {/* Card 1 Start */}
         <div class="card pastWeekInquiriesCard">
@@ -81,6 +81,6 @@ export default function PastWeekInquiries() {
         </div>
         {/* Card End */}
       </div>
-    </>
+   
   );
 }

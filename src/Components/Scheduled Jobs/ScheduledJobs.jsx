@@ -3,7 +3,7 @@ import Table from "react-bootstrap/Table";
 
 export default function ScheduledJobs() {
   return (
-    <>
+
       <div class="card">
         <div>
           <h6 class="card-title notificationBar">Scheduled Jobs</h6>
@@ -57,6 +57,6 @@ export default function ScheduledJobs() {
           {/* Table end */}
         </div>
       </div>
-    </>
+ 
   );
 }

@@ -4,7 +4,7 @@ import DonutChart from "react-donut-chart";
 
 export default function Progress() {
   return (
-    <>
+
       <div className="col-lg-3 col-md-3 d-flex align-items-stretch col-sm-12 col-xs-12">
         <div class="card progressCard">
           <div class="card-body">
@@ -65,6 +65,6 @@ export default function Progress() {
           </div>
         </div>
       </div>
-    </>
+
   );
 }

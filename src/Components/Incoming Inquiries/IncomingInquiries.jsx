@@ -4,7 +4,7 @@ import Table from "react-bootstrap/Table";
 
 export default function IncomingInquiries() {
   return (
-    <>
+  
       <div className="card incomingInquiriesCard">
         <div>
           <h6 class="card-title incomingBar">Incoming Inquiries</h6>
@@ -58,6 +58,6 @@ export default function IncomingInquiries() {
           {/* Table end */}
         </div>
       </div>
-    </>
+  
   );
 }

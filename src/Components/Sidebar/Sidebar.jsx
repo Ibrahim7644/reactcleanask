@@ -6,7 +6,7 @@ import { VscRootFolder, VscInbox } from "react-icons/vsc";
 
 function Sidebar(props) {
   return (
-    <>
+
       <div class="row">
         
           <div class="col-1 pl-3 align-items-stretch d-flex  align-items-center align-items-sm text-white">
@@ -85,7 +85,7 @@ function Sidebar(props) {
           </div>
         </div>
       </div>
-    </>
+  
   );
 }
 

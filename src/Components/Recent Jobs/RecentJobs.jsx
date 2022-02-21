@@ -8,7 +8,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 
 export default function RecentJobs() {
   return (
-    <>
+ 
       <div className="col-lg-6 col-md-6 d-flex align-items-stretch col-sm-12 col-xs-12">
         <div class="card recentJobsCard">
           <div class="card-body">
@@ -61,6 +61,6 @@ export default function RecentJobs() {
           </div>
         </div>
       </div>
-    </>
+
   );
 }

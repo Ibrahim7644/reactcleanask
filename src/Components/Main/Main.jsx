@@ -22,7 +22,7 @@ import { BsFillPersonBadgeFill } from "react-icons/bs";
 
 function Main(props) {
   return (
-    <>
+
       <div className="main_menu">
         <div className="row">
           <div className="col-12">
@@ -89,7 +89,7 @@ function Main(props) {
 
               {/* ROW 4 */}
               <div class="row mt-2">
-                <div className="col-lg-4 col-md-4 d-flex align-items-stretch col-sm-12 col-xs-12">
+                <div className="col-lg-4 col-md-4 align-items-stretch col-sm-12 col-xs-12">
                   <Map />
                 </div>
                 <div className="col-lg-8 col-md-8  align-items-stretch col-sm-12 col-xs-12">
@@ -108,7 +108,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-    </>
+ 
   );
 }
 
