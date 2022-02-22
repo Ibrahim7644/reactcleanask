@@ -1,18 +1,18 @@
 import React from "react";
-import Nav from "../Navbar/Nav";
-import Sidebar from "../Sidebar/Sidebar";
-import Footer from "../Footer/Footer";
-import Kpi from "../Kpi/Kpi";
+import Nav from "../../Components/Navbar/Nav";
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import Footer from "../../Components/Footer/Footer";
+import Kpi from "../../Components/Kpi/Kpi";
 
 import "./Main.css";
-import PastWeekInquiries from "../Past week inquiries/PastWeekInquiries";
-import RecentJobs from "../Recent Jobs/RecentJobs";
-import Progress from "../Progress/Progress";
-import Notifications from "../Notifications/Notifications";
-import IncomingInquiries from "../Incoming Inquiries/IncomingInquiries";
-import ActiveJobs from "../Active Jobs/ActiveJobs";
-import Map from "../Map/Map";
-import ScheduledJobs from "../Scheduled Jobs/ScheduledJobs";
+import PastWeekInquiries from "../../Components/Past week inquiries/PastWeekInquiries";
+import RecentJobs from "../../Components/Recent Jobs/RecentJobs";
+import Progress from "../../Components/Progress/Progress";
+import Notifications from "../../Components/Notifications/Notifications";
+import IncomingInquiries from "../../Components/Incoming Inquiries/IncomingInquiries";
+import ActiveJobs from "../../Components/Active Jobs/ActiveJobs";
+import Map from "../../Components/Map/Map";
+import ScheduledJobs from "../../Components/Scheduled Jobs/ScheduledJobs";
 
 import { MdPersonSearch } from "react-icons/md";
 import { FiTruck } from "react-icons/fi";
