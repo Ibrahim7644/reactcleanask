@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Main from './Pages/Dashboard/Main';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from './Pages/Login/Login';
 
 // for services
 
@@ -43,7 +44,7 @@ function App() {
   return (
     <div className="App">
 
-      <Main />
+      <Login />
 
       {/* <h1>Service Result</h1>
       <hr />

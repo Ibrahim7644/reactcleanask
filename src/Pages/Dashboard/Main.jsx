@@ -3,6 +3,7 @@ import Nav from "../../Components/Navbar/Nav";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Footer from "../../Components/Footer/Footer";
 import Kpi from "../../Components/Kpi/Kpi";
+import Login from '../../Pages/Login/Login';
 
 import "./Main.css";
 import PastWeekInquiries from "../../Components/Past week inquiries/PastWeekInquiries";
@@ -29,16 +30,16 @@ function Main(props) {
             <Nav />
           </div>
         </div>
-        <div className="row">
+        <div className="row ">
           <div className="sidebar col-1 bg-dark">
-            <div class="row">
-              <div class="col-12 d-inline-flex sideBarElement">
+            <div class="row   ">
+              <div class="col-md-8   d-inline-flex sideBarElement">
                 <Sidebar />
               </div>
             </div>
           </div>
           {/* ROW 1 */}
-          <div className="col-11 ">
+          <div className="col-11">
             <div className="row">
               <div class="row mt-2 cardsCenter">
                 <Kpi
