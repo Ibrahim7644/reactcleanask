@@ -3,6 +3,7 @@ import './App.css';
 import Main from './Pages/Dashboard/Main';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from './Pages/Login/Login';
+import { BrowserRouter, Switch, Route, Routes, useNavigate } from 'react-router-dom'
 
 // for services
 
@@ -44,7 +45,14 @@ function App() {
   return (
     <div className="App">
 
-      <Login />
+    {/* <Login /> */}
+      <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Login/>} />
+
+                        <Route exact path="/Dashboard" element={<Main/>} />
+                    </Routes>
+            </BrowserRouter>
 
       {/* <h1>Service Result</h1>
       <hr />

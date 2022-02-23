@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { GiLoveInjection } from "react-icons/gi";
+import { Link , Navigate } from 'react-router-dom'
 
 
 export const Login = () => {
@@ -11,6 +12,8 @@ export const Login = () => {
     var UserPassword=document.getElementById("typePasswordX").value; 
     console.log(UserEmail)
     console.log(UserPassword)
+    window.location.replace("/Dashboard");
+    //return <Navigate  to="/Dashboard"/>
 
 }
 return (
@@ -40,7 +43,7 @@ return (
 
                                     <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
 
-                                    <button className="btn btn-outline-light btn-lg px-5" type="submit" onClick={myFunction}>Login</button>
+                                   <button className="btn btn-outline-light btn-lg px-5" type="submit" onClick={myFunction}>Login</button>
 
                                     <div className="d-flex justify-content-center text-center mt-4 pt-1">
                                         <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>

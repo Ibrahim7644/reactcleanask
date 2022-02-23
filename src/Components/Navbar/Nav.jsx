@@ -11,8 +11,13 @@ import { Button } from 'bootstrap';
 //import { Button, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'react-bootstrap';
 
 
+export const Nav = () => {
 
-function Nav(props) {
+    function myFunction()
+    {
+        window.location.replace("/");
+    }
+    
     return (
         <div class='row justify-content-around'>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,7 +27,7 @@ function Nav(props) {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    &emsp;
+                        &emsp;
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
 
@@ -46,7 +51,7 @@ function Nav(props) {
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-secondary  btn-lg">Log Out</button>
+                                    <button type="button" class="btn btn-secondary  btn-lg"  onClick={myFunction}>Log Out</button>
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
@@ -65,4 +70,10 @@ function Nav(props) {
 Nav.propTypes = {}
 
 export default Nav
+
+
+
+
+
+
 
