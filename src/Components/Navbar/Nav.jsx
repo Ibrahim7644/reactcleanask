@@ -4,6 +4,7 @@ import { GiLoveInjection } from "react-icons/gi";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { Button } from 'bootstrap';
+import { Link } from 'react-router-dom';
 
 //import { Menu, Dropdown, Button } from 'antd';
 //import Navbar from 'react-bootstrap/Navbar'
@@ -12,11 +13,6 @@ import { Button } from 'bootstrap';
 
 
 export const Nav = () => {
-
-    function myFunction()
-    {
-        window.location.replace("/");
-    }
     
     return (
         <div class='row justify-content-around'>
@@ -51,7 +47,7 @@ export const Nav = () => {
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-secondary  btn-lg"  onClick={myFunction}>Log Out</button>
+                                <Link to='/'><button class="btn btn-secondary  btn-lg">Log Out</button></Link>
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
