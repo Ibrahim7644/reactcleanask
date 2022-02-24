@@ -1,76 +1,77 @@
-import logo from './logo.svg';
-import './App.css';
-import Main from './Pages/Dashboard/Main';
+import React, { useState } from "react";
+import "./App.css";
+import Main from "./Pages/Dashboard/Main";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from './Pages/Login/Login';
-import { BrowserRouter, Switch, Route, Routes, useNavigate } from 'react-router-dom'
+import Login from "./Pages/Login/Login";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// for services
+// for Redux
 
-import { useState } from 'react';
-import { getTodos } from './Services/Index'
-import { useEffect } from "react";
-
-
-// Redux and Reducer
-
-import store from './Redux/Store';
-
-    
-// store.dispatch({
-//   type: "bugAdded",
-//   payload: {
-//     discription: "Bug1"
-//   }
-// });
-// store.dispatch({
-//   type: "bugRemoved",
-//   payload: {
-//     id: 1
-//   }
-// });
-
+import { useDispatch, useSelector } from "react-redux";
+import { addBird, incrementBird } from "./Store/birds";
 
 function App() {
+  const [birdName, setBird] = useState("");
+  const birds = useSelector((state) => state.birds);
+  const dispatch = useDispatch();
 
-  const [serviceData, setServiceData] = useState();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    dispatch(addBird(birdName));
+    setBird("");
+  };
 
-  useEffect(() => {
-    getTodos().then((res) => setServiceData(res.data));
-  }, [])
-
-
-  console.log("store getstate is", store.getState())
-  console.log("store is", store)
   return (
     <div className="App">
+      {/* shows data of store  */}
+      <div
+        className="wrapper"
+        style={{ border: "2px solid red", textAlign: "left" }}
+      >
+        <h1>Bird List</h1>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <p>Add Bird</p>
+            <input
+              type="text"
+              onChange={(e) => setBird(e.target.value)}
+              value={birdName}
+            />
+          </label>
+          <div>
+            <button type="submit">Add</button>
+          </div>
+        </form>
+        <ul>
+          {birds.map((bird) => (
+            <li key={bird.name}>
+              <h3>{bird.name}</h3>
+              <div>
+                Views: {bird.views}
+                <button onClick={() => dispatch(incrementBird(bird.name))}>
+                  <span role="img" aria-label="add">
+                    ➕
+                  </span>
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-    {/* <Login /> */}
-      <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<Login/>} />
-
-                        <Route exact path="/Dashboard" element={<Main/>} />
-                    </Routes>
-            </BrowserRouter>
-
-      {/* <h1>Service Result</h1>
       <hr />
-      <ul>
-        {
-          serviceData.map((data => (
-            <li key={data.id}>
-            Title: {data.title},
-            <br/>
-            userid : {data.userId}
-            <br/>
-            completed : {data.completed ? "true" : "false"}
-            <hr/>
-             </li>
-          )))
-        }
+      <hr />
 
-      </ul> */}
+      {/* End data of store  */}
+
+      {/* <Login /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+
+          <Route exact path="/Dashboard" element={<Main />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
