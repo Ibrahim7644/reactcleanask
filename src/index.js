@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { createStore } from 'redux';
 import birdApp from "./Store/birds";
 
-const store = createStore(birdApp);
+const store = createStore(birdApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 
 ReactDOM.render(

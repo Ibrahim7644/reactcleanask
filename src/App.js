@@ -28,7 +28,7 @@ function App() {
         className="wrapper"
         style={{ border: "2px solid red", textAlign: "left" }}
       >
-        <h1>Bird List</h1>
+        <h1>Redux List</h1>
         <form onSubmit={handleSubmit}>
           <label>
             <p>Add Bird</p>
