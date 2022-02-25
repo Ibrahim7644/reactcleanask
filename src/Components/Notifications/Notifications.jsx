@@ -1,5 +1,6 @@
 import React from "react";
 import "./Notifications.css";
+import { Button } from "react-bootstrap";
 
 export default function Notifications() {
   return (
@@ -36,9 +37,9 @@ export default function Notifications() {
         <hr />
       </div>
       </div>
-      <button type="button" class="btn btn-primary seeAllBtn">
-            See All
-          </button>
+      <Button className="seeAllBtn" variant="primary">
+        See All
+      </Button>
     </div>
   );
 }

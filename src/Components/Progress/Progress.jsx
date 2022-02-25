@@ -20,8 +20,6 @@ export default function Progress() {
                 colors={["skyblue"]}
                 emptyColor={["whitesmoke"]}
                 clickToggle={[false]}
-                onMouseEnter={[false]}
-                onMouseLeave={[false]}
                 onClick={[false]}
                 data={[
                   {
@@ -46,8 +44,6 @@ export default function Progress() {
                 colors={["skyblue"]}
                 emptyColor={["whitesmoke"]}
                 clickToggle={[false]}
-                onMouseEnter={[false]}
-                onMouseLeave={[false]}
                 onClick={[false]}
                 data={[
                   {

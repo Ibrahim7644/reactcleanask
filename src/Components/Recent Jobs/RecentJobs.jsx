@@ -3,6 +3,7 @@ import "./RecentJobs.css";
 import Table from "react-bootstrap/Table";
 import VerticalBarChart from 'react-vertical-bar-chart';
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import { Button } from "react-bootstrap";
 
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -13,9 +14,14 @@ export default function RecentJobs() {
         <div class="card recentJobsCard">
           <div class="card-body">
             <h6 class="card-title"> Recent Jobs </h6>
-            <button className="btn btn-sm btn-primary moreInfoBtn">
+
+
+            <Button className="moreInfoBtn" size="sm" variant="primary">More info &nbsp;&nbsp; <BsChevronDoubleDown />{" "}</Button>
+
+
+            {/* <button className="btn btn-sm btn-primary moreInfoBtn">
               More info &nbsp;&nbsp; <BsChevronDoubleDown />{" "}
-            </button>
+            </button> */}
             {/* Table start */}
 
           <Table hover>
