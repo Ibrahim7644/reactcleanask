@@ -31,12 +31,12 @@ function Main(props) {
           </div>
         </div>
         <div className="row ">
-          <div className="sidebar col-1 bg-dark">
-            <div class="row   ">
-              <div class="col-md-8   d-inline-flex sideBarElement">
+          <div style={{border : "2px solid red"}} className="sidebar col-1 bg-dark">
+           
+   
                 <Sidebar />
-              </div>
-            </div>
+       
+           
           </div>
           {/* ROW 1 */}
           <div className="col-11">
