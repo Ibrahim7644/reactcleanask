@@ -6,13 +6,13 @@ import { BiDotsVerticalRounded } from 'react-icons/bi';
 import { Button } from 'bootstrap';
 import { Link } from 'react-router-dom';
 
-//import { Menu, Dropdown, Button } from 'antd';
-//import Navbar from 'react-bootstrap/Navbar'
-//import { Container, Navbar, NavDropdown } from 'react-bootstrap'
-//import { Button, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'react-bootstrap';
-
+import { useSelector, useDispatch } from "react-redux";
+import { isLoggedAction } from "../../Store/Actions/Action";
 
 export const Nav = () => {
+
+  const isLoggedIn = useSelector((state) => state.isLogged);
+  const dispatch = useDispatch();
     
     return (
         <div class='row justify-content-around'>
@@ -47,7 +47,7 @@ export const Nav = () => {
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
-                                <Link to='/'><button class="btn btn-secondary  btn-lg">Log Out</button></Link>
+                                <Link to='/'><button onClick={() => dispatch(isLoggedAction())} class="btn btn-secondary  btn-lg">Log Out</button></Link>
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">

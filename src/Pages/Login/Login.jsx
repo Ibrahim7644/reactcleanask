@@ -18,6 +18,7 @@ export const Login = () => {
     console.log(UserPassword);
     if (UserEmail == "admin" && UserPassword == "admin") {
       navigate("../Dashboard", { replace: true });
+      // isLogged state  Change 
       dispatch(isLoggedAction());
     } else {
       alert("Invalid Login or Password");
