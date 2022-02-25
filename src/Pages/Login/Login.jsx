@@ -6,9 +6,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { isLoggedAction } from "../../Store/Actions/Action";
 
 export const Login = () => {
-  const isLogged = useSelector((state) => state.isLogged);
+  // useSelector is use to get data from redux store  
+  useSelector((state) => state.isLogged);
   const dispatch = useDispatch();
-
   let navigate = useNavigate();
 
   const myFunction = () => {

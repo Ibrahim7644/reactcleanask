@@ -1,5 +1,5 @@
 export const isLoggedAction = () => {
-    return{
-        type : 'Login'
-    }
-}
+  return {
+    type: "Login",
+  };
+};
