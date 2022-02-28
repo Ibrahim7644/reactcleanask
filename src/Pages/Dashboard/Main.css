@@ -1,23 +1,13 @@
-.main_menu
-{
-    /* background-color: rgb(136, 155, 156); */
-    background-color: lightgray;
-    overflow: hidden;
-    /* border: 2px solid red; */
-}
-
-.sidebar
-{
-    height: auto;
-    /* height: 200vh; */
+.main_menu {
+  background-color: lightgray;
+  overflow: hidden;
 }
 
 /* Main Body is use to contol div of main body  */
 
-
-.cardsCenter{
-    justify-content: center;
+.cardsCenter {
+  justify-content: center;
 }
-.sideBarElement{
-    justify-content:end;
+.sideBarElement {
+  justify-content: end;
 }
