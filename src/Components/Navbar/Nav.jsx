@@ -7,13 +7,13 @@ import { Button } from 'bootstrap';
 import { Link } from 'react-router-dom';
 
 import { useSelector, useDispatch } from "react-redux";
-import { isLoggedAction } from "../../Store/Actions/Action";
+import { isLoggedAction } from "../../Redux/Actions/Action";
 
 export const Nav = () => {
 
-  const isLoggedIn = useSelector((state) => state.isLogged);
-  const dispatch = useDispatch();
-    
+    const isLoggedIn = useSelector((state) => state.isLogged);
+    const dispatch = useDispatch();
+
     return (
         <div class='row justify-content-around'>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,7 +47,7 @@ export const Nav = () => {
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
-                                <Link to='/'><button onClick={() => dispatch(isLoggedAction())} class="btn btn-secondary  btn-lg">Log Out</button></Link>
+                                    <Link to='/'><button onClick={() => dispatch(isLoggedAction())} class="btn btn-secondary  btn-lg">Log Out</button></Link>
                                 </li>
                                 &nbsp;&nbsp;
                                 <li class="nav-item">
