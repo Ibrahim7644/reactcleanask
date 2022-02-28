@@ -1,18 +1,15 @@
-.incomingBar1 {
+.incomingBar {
     margin-top: 0;
-    background-color: rgb(252, 252, 252);
+    background-color: lightblue;
     padding: 10px;
     margin: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
-
-  .incomingBar2 {
-
-    background-color: rgb(146, 205, 226);
- 
-  }
-  .incomingInquiriesCard1{
+  .incomingInquiriesCard{
     height: auto;
     border-radius: 5;
+  }
+  .Action{
+    color: skyblue ;
   }
