@@ -32,6 +32,7 @@ function Main(props) {
       <div className="row ">
         <div className="col-1 bg-dark">
           <Sidebar />
+
         </div>
         {/* ROW 1 */}
         <div className="col-11">

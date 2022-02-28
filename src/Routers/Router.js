@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Routes, useNavigate } from 'react-router-
 import Main from '../Pages/Dashboard/Main'
 import Login from '../Pages/Login/Login'
 import BookNow from '../Components/BookNow/BookNow'
+import PastOffers from "../Pages/PastOffersPage/PastOffers"
 
 export const Router = () => {
 
@@ -15,6 +16,8 @@ export const Router = () => {
                     <Route exact path="/Dashboard" element={<Main />} />
 
                     <Route path="/BookNow" element={<BookNow />} />
+
+                    <Route path="/PastOffers" element={<PastOffers />} />
                 </Routes>
             </BrowserRouter>
         </div>
