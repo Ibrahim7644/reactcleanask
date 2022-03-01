@@ -47,3 +47,9 @@
 .btnPrinter{
   margin: 2%;
 }
+.changeMarkup{
+  white-space: nowrap;
+}
+.inputField{
+  display: inline-block;
+}

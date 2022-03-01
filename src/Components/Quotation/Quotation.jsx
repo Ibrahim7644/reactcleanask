@@ -120,14 +120,15 @@ export const Quotation = () => {
                 </div>
 
                 <div className="col-4 col-lg-4 col-md-12 col-sm-12 mt-2">
-                  <b>Change Markup: </b>
-
-                  <input
-                    type="text"
-                    id="text"
-                    value={"20%"}
-                    class="col-form-label"
-                  />
+                  <div className="col-xs-2">
+                    <b className="changeMarkup">Change Markup: </b>
+                    <input
+                      type="text"
+                      id="text"
+                      value={"20%"}
+                      class="form-control form-control-sm inputField"
+                    />
+                  </div>
                 </div>
 
                 <div className="col-4 col-lg-4 col-md-12 col-sm-12 mt-2">
